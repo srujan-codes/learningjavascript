@@ -17,4 +17,10 @@ Q: what is block scope?
 A: Block scope is often used in conditional statements and loops to control the scope of variables.
 Q: what is functional scope?
 A: Variables that are declared inside a function are called local variables and in the function scope.
+To declare constant we have to use command const keyword followed by variable name.
+We can declare it only once and connot modify it later.
+To declare variables we have 2 options "let" and var" 
+- let : It has block scope which means if you declare a variable using let inside an if.
+so we prefer let and try not to use var.
+
 */
