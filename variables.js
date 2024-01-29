@@ -22,5 +22,5 @@ We can declare it only once and connot modify it later.
 To declare variables we have 2 options "let" and var" 
 - let : It has block scope which means if you declare a variable using let inside an if.
 so we prefer let and try not to use var.
-
+If we declare a variable and leave it or do not assign any value then it will be undefined.
 */
