@@ -22,6 +22,8 @@ Use MDN docs to refer anything.
 Number => range is 2^53 
 bigint  => for numbers greater than that
 string => "" written inside double quotes
+let a = 33 (this is a number)
+let a = "33" (this is a string)
 boolean => true/false
 null =>   Standalone value. Used when there is no value (like null pointer exception in other languages). It means nothing.
 null can also be assigned.
