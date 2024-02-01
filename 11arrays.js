@@ -25,3 +25,12 @@ console.log(myArr)  // returned [ 8, 0, 1, 2, 3, 4, 5, 6] Pushed in the starting
 myArr.shift()
 console.log(myArr)  // returned normal original array.
 
+const marvel_heros = ["thor", "Ironman", "spiderman"]
+const dc_heros = ["superman", "flash", "batman"]
+
+marvel_heros.push(dc_heros) // here array is also considered as a single datatype. so it pushed dc heroes into marvel heroes.
+
+ console.log(marvel_heros);
+ console.log(marvel_heros[3][1]); // returned flash
+
+ 
