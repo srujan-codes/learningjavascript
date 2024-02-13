@@ -89,7 +89,49 @@ const appUser2 = {
     }
 }
 
-console.log(appUser2.fullname.userfullname.firstname);
+console.log(appUser2.fullname.userfullname.firstname); // returned  fullname: { userfullname: { firstname: 'srujan', lastname: 'vooturi' } }
 
 console.log(appUser1); //returned empty object {}
 console.log(appUser2); //returned empty object {}
+
+// combining objects
+
+const obj1 = {1: "a" , 2: "b"}
+const obj2 = {3: "c" , 4: "d"}
+
+//const obj3 = {obj1, obj2} // object is there inside object
+//const obj3 = Object.assign(obj1, obj2)
+//console.log(obj3);  // returned { obj1: { '1': 'a', '2': 'b' }, obj2: { '3': 'c', '4': 'd' } }in prev case
+// after doing object.assign it returned { '1': 'a', '2': 'b', '3': 'c', '4': 'd' }
+
+//const obj3 = Object.assign(obj1, obj2)
+
+//const obj4 = {...JsUser.obj1, ...obj2}  // we used "..."  for spreading the properties of obj1 and then followed by obj2
+//console.log(obj4);
+
+let obj4 = Object.assign({}, obj1, obj2)
+console.log( obj4);
+
+// whenever we het data from database, 
+const users = [
+    {
+        id: 1,
+        email: "h@gmail.com"
+    },
+    {
+        id: 1,
+        email: "h@gmail.com"
+    },
+    {
+        id: 1,
+        email: "h@gmail.com"
+    },
+]
+
+users[1].email
+console.log(appUser1);
+console.log(Object.keys(appUser1)); // this will give all the keys hence returned [ 'id', 'name', 'isLoggedIn' ]
+console.log(Object.values(appUser1)); //  this will give all the values hence returned [ '123abc', 'Sammy', false ]
+console.log(Object.entries(appUser1));// transforms  the user into an array of key value pairs [[key,value]] returned [ [ 'id', '123abc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ] prop 1 is key and prop 2 is value
+console.log(appUser1.hasOwnProperty('isLoggedIn')); // returned true
+
