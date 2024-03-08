@@ -2,13 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-      
+
     <title> Learning Document Object Model </title>
+    <style>
+        .bg-black{
+            background-color: black;
+            color: #fff;
+        }
+    </style>
 </head>
-<body>
-    <div class="bg-black">
-    <h1 class="heading"> Learning DOM</h1>
+<body class="bg-black">
+    <div >
+    <h1 id="title" class="heading"> Learning DOM  <span style="display: none;"> test text </span></h1>
     <p>Lorem ipsum dolor sit amet.</p>
     </div>
 </body>
 </html>
+
+
+// document.getElementById('titile')  here title is a parameter
+// inner text means the text that is visible       title.innerText
+// text content we get full context               title.textContent
+// we also have title.innerHtml        we get full html code will be returned including tags
