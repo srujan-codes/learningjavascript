@@ -26,3 +26,42 @@
 // we also have title.innerHtml        we get full html code will be returned including tags
 
 // node list should not have for each in node list you have to mention the index to select/modify anything
+// map cannot be done on node list it has to be converted to array first then initiate map
+
+
+
+// Selects the first element in the document with the specified ID
+const elementById = document.getElementById("myElementId");
+
+// Selects all elements in the document with the specified class name and returns a NodeList
+const elementsByClassName = document.getElementsByClassName("myClassName");
+
+// Selects all elements in the document with the specified tag name and returns a NodeList
+const elementsByTagName = document.getElementsByTagName("div");
+
+// Selects the first element that matches a specified CSS selector
+const elementBySelector = document.querySelector("#myElementId .myClassName");
+
+// Selects all elements in the document that match a specified CSS selector and returns a NodeList
+const elementsBySelectorAll = document.querySelectorAll("div.myClassName");
+
+// Selects the first child element of the specified parent element
+const firstChildElement = parentElement.firstChild;
+
+// Selects the last child element of the specified parent element
+const lastChildElement = parentElement.lastChild;
+
+// Selects the previous sibling element of the specified element
+const previousSiblingElement = element.previousSibling;
+
+// Selects the next sibling element of the specified element
+const nextSiblingElement = element.nextSibling;
+
+// Selects all child elements of the specified parent element and returns a live HTMLCollection
+const childElements = parentElement.children;
+
+// Selects the parent element of the specified element
+const parentElement = element.parentElement;
+
+// Selects all elements that are descendants of a specified parent element
+const descendantElements = parentElement.querySelectorAll(".descendantClassName");
