@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Document Object Model</title>
+</head>
+<body style="background-color: black; color:aliceblue">
+    <div class="parent">
+        <div class="day">monday</div>
+        <div class="day">tuesday</div>
+        <div class="day">wednesday</div>
+        <div class="day">thursday</div>
+    
+    </div>
+</body>
+<script>
+   const parent =  document.querySelector('.parent')  // const is important here
+   // console.log(parent);
+   // console.log(parent.children[1]); // returned second element with html tags
+   // console.log(parent.children[1].innerHTML); // returned only value i.e tuesday without html tags
+    
+ /*  for (let i = 0; i < parent.children.length; i++) {
+          console.log(parent.children[i].innerHTML); // we got the vaues printed
+        
+     }  */
+     
+     //console.log(parent.firstElementChild);
+     //console.log(parent.lastElementChild);
+
+     const dayOne = document.querySelector('.day')
+     console.log(dayOne);
+ </script>
+</html>
