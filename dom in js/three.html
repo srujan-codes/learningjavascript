@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<body style="background-color: #212121; color: azure;" >
+    <script>
+   const h1 =      document.createElement('h1')
+   console.log(h1); // it returned <h1>,/h1>
+    h1.className = "main"
+    h1.id = Math.round(Math.random() * 10 + 1)
+    h1.setAttribute("title", "generated title") // we have to give a key value pair
+    h1.style.backgroundColor = "green"
+   
+// inner text will retrieve the text and then override it if we want to but whereas set attribute directly changes the value saving us one round trip time.
+</script>
+</body>
+</html>

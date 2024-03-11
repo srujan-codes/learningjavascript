@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Document Object Model</title>
+</head>
+<body style="background-color: black; color:aliceblue">
+    <div class="parent">
+        <div class="day">monday</div>
+        <div class="day">tuesday</div>
+        <div class="day">wednesday</div>
+        <div class="day">thursday</div>
+    
+    </div>
+</body>
+<script>
+   const parent =  document.querySelector('.parent')  // const is important here
+   // console.log(parent);
+   // console.log(parent.children[1]); // returned second element with html tags
+   // console.log(parent.children[1].innerHTML); // returned only value i.e tuesday without html tags
+    
+ /*  for (let i = 0; i < parent.children.length; i++) {
+          console.log(parent.children[i].innerHTML); // we got the vaues printed
+        
+     }  */
+     
+     //console.log(parent.firstElementChild);
+     //console.log(parent.lastElementChild);
+
+     const dayOne = document.querySelector('.day')
+     //console.log(dayOne);
+
+     console.log("NODES: ", parent.childNodes); 
+      /* this is our node list where every element is considered NodeList(9) [text, div.day, text, div.day, text, div.day, text, div.day, text]
+0
+: 
+text
+1
+: 
+div.day
+2
+: 
+text
+3
+: 
+div.day
+4
+: 
+text
+5
+: 
+div.day
+6
+: 
+text
+7
+: 
+div.day
+8
+: 
+text
+length
+: 
+9 
+*/
+ </script>
+</html>
