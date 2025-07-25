@@ -1,5 +1,5 @@
 /* 
-Javascript is a synamically typed lamguageJavaScript is dynamically typed to provide flexibility and expressiveness,
+Javascript is a dynamically typed language JavaScript is dynamically typed to provide flexibility and expressiveness,
 // allowing developers to write concise, readable code without the need for explicit type declarations. 
 //This dynamic nature supports rapid development and aligns well with the scripting language paradigm, 
 especially in the context of web development.
